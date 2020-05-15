@@ -1,0 +1,42 @@
+.alert {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  border:1px solid black;
+}
+li {
+    border-bottom:1px solid black;
+    display:inline;
+}
+li:last-child {
+    border-bottom: 0px;
+}
+li a {
+  display: block;
+  color: #000000;
+  background-color: lightgrey;
+  text-align:center;
+  padding: 5px;
+  text-decoration: none;
+}
+li a:hover {
+    background-color: #BEAE50;
+    color: white;
+    text-decoration: none;
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+#logo:hover, #logo {
+    background-color: #000000;
+    color: white;
+}
