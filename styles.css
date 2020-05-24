@@ -1,8 +1,9 @@
+@charset "UTF-8";
 .alert {
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    margin-bottom: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 0px;
 }
 
 ul {
@@ -10,52 +11,133 @@ ul {
   margin: 0;
   padding: 0;
   width: 150px;
-  border:1px solid black;
+  border: 1px solid black;
 }
-ul li {
-    border-bottom:1px solid black;
-    display:inline;
-}
-ul li:last-child {
-    border-bottom: 0px;
-}
+
 ul li a {
   display: block;
   color: #000000;
   background-color: lightgrey;
-  text-align:center;
+  text-align: center;
   padding: 5px;
   text-decoration: none;
-
 }
+
 ul li a:hover {
-    background-color: #BEAE50;
-    color: white;
-    text-decoration: none;
+  background-color: #BEAE50;
+  color: white;
+  text-decoration: none;
+}
 
-}
 .active {
-    color: #4CAF50;
-    font-weight:bold;
+  color: #4CAF50;
+  font-weight: bold;
 }
+
 .active:hover {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
+
 #logo:hover, #logo {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
-body {
-    background-color:lightgrey;
+
+#logo > img {
+  height: 25px;
 }
-.complete:before{
-    font-size:30px;
-    content: '✓';
+
+.navbar {
+  padding-top: 20px;
 }
-ol .complete {
-  list-style: none;
+
+#main {
+  margin-bottom: 50px;
 }
-ol li {
-    padding:10px;
+
+.complete:before {
+  font-size: 30px;
+  content: "☑";
 }
+
+table {
+  width: 100%;
+}
+
+th, td {
+  border-style: solid;
+  text-align: center;
+}
+
+.completed {
+  width: 20%;
+}
+
+#slider {
+  margin: 20px 5px 20px 5px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgrey;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  ul {
+    width: auto;
+  }
+
+  ul li {
+    display: inline-block;
+    height: 100%;
+  }
+
+  ul li a {
+    height: 36.5px;
+  }
+
+  .small-screen {
+    display: none;
+  }
+
+  #slider {
+    background-image: url("coding.jpg");
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 479px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  ul li {
+    display: inline;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  #logo img {
+    height: 19px;
+  }
+
+  #slider {
+    background-image: url("coding.jpg");
+    background-position: center;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
